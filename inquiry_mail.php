@@ -55,8 +55,8 @@ if ($token != "" && $token == $session_token) {
 	//ヘッダー情報を設定
 	$header = "MIME-Version: 1.0\n";
 	$header = "Content-Type: multipart/mixed;boundary=\"__BOUNDARY__\"\n";
-	$header .= "From: web幹事 <a.izawa@nebit.co.jp>\n";
-	$header .= "Reply-to: web幹事<a.izawa@nebit.co.jp>\n";
+	$header .= "From: web幹事 <test@test.co.jp>\n";
+	$header .= "Reply-to: web幹事<test@test.co.jp>\n";
 
 	//件名を設定
 	$auto_reply_subject = "【Web幹事料金シミュレーター】お問合せ内容確認:" . $_POST['name'] . "\n";
@@ -120,7 +120,7 @@ if ($token != "" && $token == $session_token) {
 
 
 	//運営側へ送るメール
-	mb_send_mail('a.izawa@nebit.co.jp', $admin_reply_subject, $body, $header);
+	mb_send_mail('test@test.co.jp', $admin_reply_subject, $body, $header);
 
     require('mail.html');
 } else {
