@@ -40,6 +40,9 @@ if ($token != "" && $token == $session_token) {
 
 	/*スプレッドシートの設定終了*/
 
+   //管理者のメールアドレスを入力してください。
+   $admin_mail = '';
+
 	$header =  null;
 	$Body = null;
 	$auto_reply_subject = null;
@@ -55,8 +58,8 @@ if ($token != "" && $token == $session_token) {
 	//ヘッダー情報を設定
 	$header = "MIME-Version: 1.0\n";
 	$header = "Content-Type: multipart/mixed;boundary=\"__BOUNDARY__\"\n";
-	$header .= "From: web幹事 <test@test.co.jp>\n";
-	$header .= "Reply-to: web幹事<test@test.co.jp>\n";
+	$header .= "From: web幹事 <".$admin_mail.">"."\n";
+	$header .= "Reply-to: web幹事<".$admin_mail.">"."\n";
 
 	//件名を設定
 	$auto_reply_subject = "【Web幹事料金シミュレーター】お問合せ内容確認:" . $_POST['name'] . "\n";
@@ -120,7 +123,7 @@ if ($token != "" && $token == $session_token) {
 
 
 	//運営側へ送るメール
-	mb_send_mail('test@test.co.jp', $admin_reply_subject, $body, $header);
+	mb_send_mail($admin_mail, $admin_reply_subject, $body, $header);
 
     require('mail.html');
 } else {
