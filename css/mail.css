@@ -1,0 +1,44 @@
+/*=====ヘッダー=====*/
+.mail-header{
+    height: 6rem;
+    border-bottom: 1px solid black;
+}
+.mail-header-inner{
+  width: 90%;
+  padding: 2rem;
+}
+.mail-header-log{
+    width: 7rem;
+}
+
+/*=====メイン=====*/
+
+.main-result-inner{
+    width: 90%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.main-result-inner p{
+   font-size: 1.5rem;
+   font-weight: 600;
+}
+
+.main-result-inner a {
+    display: block;
+    text-decoration: none;
+    width: 15rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    background: #ff7f00;
+    -webkit-box-shadow: 0 0.5rem 0 #ba6007;
+    box-shadow: 0 0.5rem 0 #ba6007;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem;
+    margin: 2rem auto 0;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}

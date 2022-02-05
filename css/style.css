@@ -1,0 +1,441 @@
+body {
+    background-color: #fffcf7;
+}
+
+/*======ヘッダー=======*/
+.money-header {
+    background-color: #fff;
+    border-bottom: 0.1rem solid #ebe9e6;
+    width: 100%;
+}
+
+.money-header-inner {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 70%;
+    height: 4.5rem;
+    margin: auto;
+}
+
+.money-header-logo {
+    width: 7rem;
+}
+/*===残りの問題数==*/
+.money-indicator{
+    display: flex;
+    align-items: center;
+}
+.money-indicator-remaining{
+    margin-right: 2rem;
+    font-size: 1.2rem;
+}
+.money-indicator-list{
+    display: none;
+    align-items: center;
+}
+.money-indicator-list-item{
+   border: 0.3rem solid #fff;
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    background: #d5cdc1;
+    -webkit-box-sizing: unset;
+    box-sizing: unset;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.money-indicator-list-item.is-answering{
+   border-color: #d5cdc1;
+   background: #fff;
+ }
+ .money-indicator-list-item.is-answered{
+    border-color: #ff7f00;
+    background: #fff;
+  }
+
+/*===オープニングページのヘッダー====*/
+.money-header.is-step{
+border-bottom: none;
+background: transparent;
+}
+/*======main=======*/
+.money-content-inner {
+    width: 70%;
+    margin: auto;
+}
+
+.money-step-title {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: left;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.money-step-select {
+    text-align: center;
+}
+
+.money-step-select-item {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    box-sizing: border-box;
+}
+
+.money-step-select-item-help {
+    display: none;
+}
+
+.money-step-select-item-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #fff1da;
+    color: #876e45;
+    box-shadow: 0 0.5rem 0 #efd2a5;
+    border-radius: 3px;
+    height: 6rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 350;
+    margin-bottom: 1rem;
+}
+
+.money-step-select-item-btn:hover {
+    background: orange;
+    box-shadow: 0 0.5rem 0 #dda044;
+}
+
+.money-step-select-item-btn img {
+    width: 43px;
+    height: 50px;
+    padding-right: 10px;
+}
+
+.btn-square-shadow:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+.money-select-amount {
+    background-color: #f5efe4;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin: 3rem 0;
+    text-align: center;
+    padding: 1.5rem;
+}
+.money-select-explanation{
+    display: flex;
+    align-items: center;
+    border: 0.1rem solid #dcd5c7;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 3rem 0;
+}
+.money-select-explanation>span{
+ font-size: 0.5rem;
+}
+.money-select-explanation>img{
+    display: block;
+    width: 3rem;
+    margin-right: 2rem;
+
+}
+.money-select-amount>span {
+    font-family: Arial;
+    font-size: 1.5rem;
+}
+.money-select-bar{
+    text-align: left;
+
+}
+.money-select-bar-back{
+outline: none;
+    border: none;
+    background: none;
+    color: #3c96cf;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.fa-chevron-left:before {
+    content: "\f053";
+}
+/*===オープニングページのmain====*/
+.money-step {
+    text-align: center;
+    padding: 4rem 0 8rem;
+}
+.money-step-lead {
+    display: inline-block;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin: 0 0 2rem;
+}
+.money-step-lead>img {
+    position: absolute;
+    width: 5rem;
+    left: -5rem;
+    bottom: 0;
+}
+.money-step-lead>span {
+    font-family: Arial;
+    font-size: 1.8rem;
+    color: #00ac18;
+    margin: 0 0.5rem;
+}
+.money-step-title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0 0 2.5rem;
+}
+.money-step-desc {
+    font-size: 1rem;
+    color: #655942;
+    margin: 0 0 3rem;
+}
+.money-step-preview {
+    display: block;
+    margin: 0 auto 1.5rem;
+    height: 20rem;
+    max-width: 100%;
+}
+.money-step-start {
+    max-width: 50rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: #ff7f00;
+    -webkit-box-shadow: 0 0.5rem 0 #ba6007;
+    box-shadow: 0 0.5rem 0 #ba6007;
+    color: #fff;
+    font-size: 0.5rem;
+    font-weight: 600;
+    padding: 2rem;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.fa-arrow-alt-circle-right:before {
+    content: "\f35a";
+}
+/*===フッター====*/
+.money-footer {
+    border-top: 0.1rem solid #ebe9e6;
+    padding: 1rem 0;
+    text-align: center;
+    background: #fff;
+}
+.money-footer-copyright {
+    font-size: 1.2rem;
+    color: #999;
+}
+@media screen and (min-width: 768px) {
+    .money-indicator-list{
+        display: flex;
+        align-items: center;
+    }
+    .money-content-inner {
+        width: 70%;
+        margin: auto;
+    }
+
+    .money-step-title {
+        font-size: 1.5rem;
+        font-weight: 450;
+        text-align: center;
+        margin: 1.5rem 0 1rem 0;
+    }
+
+    .money-step-select {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .money-step-select-item {
+        width: 33%;
+        padding: 0.5rem 0.5rem;
+        box-sizing: border-box;
+        margin: auto;
+    }
+    .money-step-select2-item {
+        width: 33%;
+        padding: 0.5rem 0.5rem;
+        box-sizing: border-box;
+    }
+
+
+    .money-step-select-item-help::before {
+        content: "";
+        width: 1rem;
+        display: inline-block;
+        border-bottom: 0.1rem solid #707070;
+        margin-bottom: 0.3rem;
+        transform: rotate(45deg);
+    }
+
+    .money-step-select-item-help::after {
+        content: "";
+        width: 1rem;
+        display: inline-block;
+        border-bottom: 0.1rem solid #707070;
+        margin-bottom: 0.3rem;
+        transform: rotate(-45deg);
+    }
+
+    .money-step-select-item-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.45rem;
+        font-weight: 450;
+    }
+
+    .btn-square-shadow:active {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+        border-bottom: none;
+    }
+
+    .money-select-amount {
+
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .money-select-amount>span {
+        font-family: Arial;
+        font-size: 2.8rem;
+    }
+    .money-select-explanation{
+        padding: 1rem;
+        margin: 2rem 0;
+    }
+    .money-select-explanation>span{
+        font-size: 1rem;
+    }
+    .money-select-explanation>img{
+        display: block;
+        width: 1.5rem;
+        margin-right: 1rem;
+    
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .money-step-title {
+        font-size: 2.1rem;
+        font-weight: 600;
+        text-align: center;
+        margin: 1.5rem 0 1rem 0;
+    }
+
+    .money-step-select-item-help {
+        font-size: 0.65rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .money-step-select-item-help::before {
+        content: "";
+        width: 1rem;
+        display: inline-block;
+        border-bottom: 0.1rem solid #707070;
+        margin-bottom: 0.3rem;
+        transform: rotate(45deg);
+    }
+
+    .money-step-select-item-help::after {
+        width: 1rem;
+    }
+
+    .money-step-select-item-btn {
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+
+    .money-select-amount {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .money-select-amount>span {
+        font-size: 2.8rem;
+    }
+}
+
+/*-------------------------------------------*/
+@media screen and (min-width: 1440px) {
+
+.money-step-title {
+    font-size: 2.5rem;
+}
+
+ .money-step-select-item-help{
+     font-size: 0.99rem;
+     margin-bottom: 0.5rem;
+ }
+.money-step-select-item-help::before {
+    width: 1.1rem;
+}
+.money-step-select-item-help::after {
+   
+    width: 1.1rem;
+   
+}
+
+.money-step-select-item-btn {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  /*===オープニングページのmain====*/
+
+.money-step-lead {
+    display: inline-block;
+    position: relative;
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin: 0 0 2rem;
+}
+.money-step-lead>img {
+    width: 10rem;
+    left: -12.5rem;
+    bottom: 0;
+}
+.money-step-lead>span {
+    font-size: 3.8rem;
+}
+.money-step-title {
+    font-size: 5rem;
+    font-weight: 600;
+}
+.money-step-desc {
+    font-size: 1.8rem;
+    color: #655942;
+    margin: 0 0 3rem;
+}
+.money-step-preview {
+    display: block;
+    margin: 0 auto 1.5rem;
+    height: 20rem;
+    max-width: 100%;
+}
+.money-step-start {
+  
+    font-size: 2.2rem;
+    font-weight: 600;
+
+}
+
+
+}

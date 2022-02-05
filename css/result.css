@@ -1,0 +1,396 @@
+/*=====ヘッダー=====*/
+.money-header-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 90%;
+    padding: 1rem;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.money-header-log {
+    width: 7rem;
+}
+
+/*========メイン===============*/
+
+.money-step-inner {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.money-step-summary {
+    position: relative;
+    padding: 1rem;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    text-align: center;
+    background: #00ac18;
+    color: #ffff3e;
+}
+
+.money-step-summary:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -1rem;
+    left: 0;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-style: solid;
+    border-color: #00ac18 transparent transparent;
+    border-width: 2rem 2rem 0;
+}
+
+.money-step-summary>div:first-child {
+    font-size: 1rem;
+}
+
+.money-step-summary span {
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 2rem;
+
+}
+
+.money-step-summary>div:nth-child(2) {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+p.money-step-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.money-step-text {
+    font-size: 1.8rem;
+    color: #655942;
+    margin: 0 0 2rem;
+}
+
+.money-step-text span {
+    font-weight: 600;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(0, #ffff3e));
+    background: linear-gradient(transparent 50%, #ffff3e 0);
+}
+
+.money-step-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.money-step-form-present img {
+    display: none;
+}
+
+.money-step-img {
+    display: none;
+    width: 90%;
+    margin: 1.5rem auto;
+}
+
+/*=====お問合せフォーム=====*/
+
+.money-step-form {
+    text-align: left;
+}
+
+
+
+
+.money-step-form-label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.col-contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.money-step-form-checkbox {
+    margin-top: 1rem;
+}
+
+.money-step-form-badge.badge-required {
+    background: red;
+}
+
+.money-step-form-label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.money-step-form-row {
+    margin-top: 2rem;
+}
+
+
+
+.money-step-form-badge.badge-optional {
+    background: #2529ff;
+}
+
+.money-step-form-badge {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #fff;
+    border-radius: 0.3rem;
+    padding: 0 0.5rem;
+}
+
+.money-step-form-checkbox {
+    font-size: 1.1rem;
+}
+
+
+
+[type=checkbox], [type=radio] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 90%;
+    line-height: 1.15;
+    margin-top: 1rem;
+}
+
+.money-step-form-input {
+    outline: none;
+    font-size: 1.2rem;
+    border: 0.1rem solid #ccc;
+    width: 90%;
+    padding: 1rem;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.money-step-form-present {
+    width: 90%;
+    margin: 1.5rem auto;
+}
+
+.money-step-form-present img {
+    width: 100%;
+}
+
+.money-step-form-submit {
+    display: block;
+
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    background: #ff7f00;
+    -webkit-box-shadow: 0 0.5rem 0 #ba6007;
+    box-shadow: 0 0.5rem 0 #ba6007;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem;
+    margin: 2rem auto 0;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa, .fas {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.money-step-footer {
+    border-top: 0.1rem solid #ebe9e6;
+    padding: 1rem 0;
+    text-align: center;
+    background: #fff;
+    margin-top: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+    /*========メイン===============*/
+
+    .money-step-summary>div:first-child {
+        font-size: 1.5rem;
+    }
+
+    .money-step-summary span {
+        font-family: Arial;
+        font-weight: 600;
+        font-size: 2.5rem;
+
+    }
+
+    .money-step-summary>div:nth-child(2) {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    p.money-step-text {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .money-step-text {
+        text-align: center;
+    }
+
+    .money-step-heading {
+        font-size: 2rem;
+    }
+
+    .money-step-img {
+        display: block;
+        width: 90%;
+        margin: 1.5rem auto;
+    }
+
+    /*=====お問合せフォーム=====*/
+
+    .money-step-form-inner {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .col-contents {
+        
+        width: 100%;
+    }
+
+    .money-step-form-present {
+        width: 50%;
+        margin:2rem 0 0 1rem; 
+    }
+
+    .money-step-form-present img {
+        display: block;
+        width: 100%;
+    }
+
+
+    .money-step-form-label {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .col-contents {
+        display: block;
+    }
+
+    .money-step-form-checkbox {
+        margin-top: 1rem;
+    }
+
+    .money-step-form-badge.badge-required {
+        background: red;
+    }
+
+    .money-step-form-label {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .money-step-form-row {
+        margin-top: 2rem;
+    }
+
+
+
+    .money-step-form-badge.badge-optional {
+        background: #2529ff;
+    }
+
+    .money-step-form-badge {
+        font-size: 1.2rem;
+        font-weight: 200;
+        color: #fff;
+        border-radius: 0.3rem;
+        padding: 0 0.5rem;
+    }
+
+    .money-step-form-checkbox {
+        font-size: 1.1rem;
+    }
+
+
+
+    [type=checkbox], [type=radio] {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+
+    button, input, optgroup, select, textarea {
+        font-family: inherit;
+        font-size: 90%;
+        line-height: 1.15;
+        margin-top: 1rem;
+    }
+
+    .money-step-form-input {
+        outline: none;
+        font-size: 1.2rem;
+        border: 0.1rem solid #ccc;
+        width: 90%;
+        padding: 1rem;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+    }
+
+    .money-step-form-submit {
+        display: block;
+        width: 500px;
+        margin-top: 5rem;
+    }
+
+    .fa, .fab, .fal, .far, .fas {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+    }
+
+    .fa, .fas {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+
+    .money-step-footer {
+        border-top: 0.1rem solid #ebe9e6;
+        padding: 1rem 0;
+        text-align: center;
+        background: #fff;
+        margin-top: 4rem;
+    }
+
+}
