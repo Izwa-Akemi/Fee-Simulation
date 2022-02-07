@@ -81,7 +81,11 @@ if ($token != "" && $token == $session_token) {
 	$auto_reply_text .= "合計金額:" . number_format($_POST['money']) . "\n";
 	$auto_reply_text .= "氏名:" . $_POST['name'] . "\n";
 	$auto_reply_text .= "メールアドレス:" . $_POST['email'] . "\n";
-	$auto_reply_text .= "会社名:" . $_POST['company'] . "\n";
+	if($_POST['company'] !== ""){
+		$auto_reply_text .= "会社名:" . $_POST['company'] . "\n";
+	}else{
+		$auto_reply_text .= "会社名:" . "\n";
+	}
 
 
 
@@ -112,7 +116,11 @@ if ($token != "" && $token == $session_token) {
 	$admin_reply_text .= "合計金額:" . number_format($_POST['money']) . "\n";
 	$admin_reply_text .= "氏名:" . $_POST['name'] . "\n";
 	$admin_reply_text .= "メールアドレス:" . $_POST['email'] . "\n";
-	$admin_reply_text .= "会社名:" . $_POST['company'] . "\n";
+	if($_POST['company'] !== ""){
+		$admin_reply_text .= "会社名:" . $_POST['company'] . "\n";
+	}else{
+		$admin_reply_text .= "会社名:" . "\n";
+	}
 
 	// テキストメッセージをセット
 	$body = "--__BOUNDARY__\n";
