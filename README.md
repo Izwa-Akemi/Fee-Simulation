@@ -6,7 +6,7 @@ http://rootcox.sakura.ne.jp/money-sumirate/index.html
 
 ## ダウンロード方法
 
-git clone https://github.com/Izwa-Akemi/Fee-Simulation
+ https://github.com/Izwa-Akemi/Fee-Simulation
 
 zipファイルでダウンロードしてください
 ## システム概要
