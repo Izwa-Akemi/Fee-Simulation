@@ -67,10 +67,10 @@ $_SESSION['token'] = $token;
                                                 <input id="tmpContents-1" class="q1" type="checkbox" name="checks[]" value="制作会社の紹介" required> 制作会社の紹介
                                             </label>
                                             <label for="tmpContents-2" class="money-step-form-checkbox">
-                                                <input id="tmpContents-2" class="q1" type="checkbox" name="checks[]"" value=" 相場の情報" required> 相場の情報
+                                                <input id="tmpContents-2" class="q1" type="checkbox" name="checks[]" value=" 相場の情報" required> 相場の情報
                                             </label>
                                             <label for="tmpContents-3" class="money-step-form-checkbox">
-                                                <input id="tmpContents-3" class="q1" type="checkbox" name="checks[]"" value=" リニューアルの相談" required> リニューアルの相談
+                                                <input id="tmpContents-3" class="q1" type="checkbox" name="checks[]" value=" リニューアルの相談" required> リニューアルの相談
                                             </label>
                                             <label id="check-error" for="check" class="error"></label>
                                         </div>
