@@ -34,17 +34,15 @@ if ($token != "" && $token == $session_token) {
 		curl_close($ch);
 	}
 
-
-
-
-
 	/*スプレッドシートの設定終了*/
 
-   //管理者のメールアドレスを入力してください。
+  
+	
+	
+	//管理者のメールアドレスを入力してください。
    $admin_mail = '';
 
 	$header =  null;
-	$Body = null;
 	$auto_reply_subject = null;
 	$auto_reply_text = null;
 	$admin_reply_subject = null;
@@ -57,7 +55,6 @@ if ($token != "" && $token == $session_token) {
 
 	//ヘッダー情報を設定
 	$header = "MIME-Version: 1.0\n";
-	$header = "Content-Type: multipart/mixed;boundary=\"__BOUNDARY__\"\n";
 	$header .= "From: web幹事 <".$admin_mail.">"."\n";
 	$header .= "Reply-to: web幹事<".$admin_mail.">"."\n";
 
@@ -88,15 +85,8 @@ if ($token != "" && $token == $session_token) {
 	}
 
 
-
-	// テキストメッセージをセット
-	$body = "--__BOUNDARY__\n";
-	$body .= "Content-Type: text/plain; charset=\"ISO-2022-JP\"\n\n";
-	$body .= $auto_reply_text . "\n";
-	$body .= "--__BOUNDARY__\n";
-
 	//メール送信
-	mb_send_mail($_POST['email'], $auto_reply_subject, $body, $header);
+	mb_send_mail($_POST['email'], $auto_reply_subject, $auto_reply_text, $header);
 
 	//運営側へ送るメールの件名
 	$admin_reply_subject = "【Web幹事料金シミュレーター】お問合せ内容確認:" . $_POST['name'] . "\n";
@@ -122,16 +112,8 @@ if ($token != "" && $token == $session_token) {
 		$admin_reply_text .= "会社名:" . "\n";
 	}
 
-	// テキストメッセージをセット
-	$body = "--__BOUNDARY__\n";
-	$body .= "Content-Type: text/plain; charset=\"ISO-2022-JP\"\n\n";
-	$body .= $admin_reply_text . "\n";
-	$body .= "--__BOUNDARY__\n";
-
-
-
 	//運営側へ送るメール
-	mb_send_mail($admin_mail, $admin_reply_subject, $body, $header);
+	mb_send_mail($admin_mail, $admin_reply_subject, $admin_reply_text, $header);
 
     require('mail.html');
 } else {
